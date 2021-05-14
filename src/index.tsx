@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'primereact/resources/themes/mdc-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
+import 'animate.css';
+import './index.scss';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

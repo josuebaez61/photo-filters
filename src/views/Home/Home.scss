@@ -1,0 +1,27 @@
+.blur-background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/home/home-bg-3.jpg);
+    background-size: cover;
+    transition: filter 2s;
+}
+
+.home {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__container {
+    height: 500px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.542);
+    padding: 10px;
+    border-radius: 10px;
+}
