@@ -5,15 +5,21 @@ import { Button } from 'primereact/button';
 import 'primereact/resources/themes/mdc-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+import { useHistory } from 'react-router';
 const Home = () => {
 
     const [bgFilter, setBgFilter] = useState('none');
+    const history = useHistory();
 
     useEffect(() => {
         setTimeout(() => {
             setBgFilter('blur(4px)')
         }, 500)
     }, [])
+
+    const begin = () => {
+        history.push('/editor');
+    }
 
     return (
         <div>
@@ -27,7 +33,7 @@ const Home = () => {
                             <AppLogo />
                         </div>
                         <div className="p-col-12 p-text-center">
-                            <Button label="Comenzar" className="p-button-rounded p-button-lg" />
+                            <Button onClick={ begin } label="Comenzar" className="p-button-rounded p-button-lg" />
                         </div>
                     </article>
                 </main>

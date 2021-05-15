@@ -1,0 +1,12 @@
+.editor {
+    height: 100vh;
+    width: 100vw;
+    background-color: #29282B;
+    color: white;
+    .editor__image-container {
+        width: 1000px;
+        img {
+            width: 100%;
+        }
+    }
+}

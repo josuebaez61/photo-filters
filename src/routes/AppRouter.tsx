@@ -6,6 +6,7 @@ import {
     Link,
     Redirect
   } from "react-router-dom";
+import Editor from '../views/Editor/Editor';
 import Home from '../views/Home/Home';
 
 const AppRouter = () => {
@@ -13,9 +14,10 @@ const AppRouter = () => {
         <Router>
             <div>
                 <Switch>
-                    <Route path="/" component={ Home } />
+                    <Route exact path="/" component={ Home } />
+                    <Route exact path="/editor" component={ Editor } />
+                    <Redirect to="/" />
                 </Switch>
-                <Redirect to="/" />
             </div>
         </Router>
     )
